@@ -4,7 +4,7 @@
 @import "./global/fonts.scss";
 @import "./global/visually-hidden.scss";
 
-/* BLOCKS */
+/* BLOCKS */ /*  primary */
 @import "./blocks/page.scss";
 @import "./blocks/button.scss";
 @import "./blocks/header.scss";
@@ -18,12 +18,21 @@
 @import "./blocks/services-item.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/example.scss";
+
+/* BLOCKS */ /* form.html */
+@import "./blocks/main-form.scss";
+@import "./blocks/form.scss";
+
+/* BLOCKS */ /* catalog.html */
+@import "./blocks/main-catalog-page.scss";
+@import "./blocks/cards-catalog.scss";
+@import "./blocks/card-catalog.scss";
+@import "./blocks/catalog-extra.scss";
+@import "./blocks/advantages-offer.scss";
+
+/* BLOCKS */ /* secondary */
 @import "./blocks/address.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/logo-text.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/developer-logo.scss";
-
-/* BLOCKS */ /* form.html */
-@import "./blocks/main-form.scss";
-@import "./blocks/form.scss";
