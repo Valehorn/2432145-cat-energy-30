@@ -1,17 +1,21 @@
 /* GLOBAL */
 @import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/common.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
 @import "./global/visually-hidden.scss";
 
-/* BLOCKS */ /*  primary */
+/* BLOCKS */
+/*  primary */
 @import "./blocks/page.scss";
 @import "./blocks/button.scss";
 @import "./blocks/header.scss";
 @import "./blocks/header-logo.scss";
 @import "./blocks/nav.scss";
 
-/* BLOCKS */ /* index.html */
+/* BLOCKS */
+/* index.html */
 @import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/services.scss";
@@ -19,18 +23,21 @@
 @import "./blocks/advantages.scss";
 @import "./blocks/example.scss";
 
-/* BLOCKS */ /* form.html */
+/* BLOCKS */
+/* form.html */
 @import "./blocks/main-form.scss";
 @import "./blocks/form.scss";
 
-/* BLOCKS */ /* catalog.html */
+/* BLOCKS */
+/* catalog.html */
 @import "./blocks/main-catalog-page.scss";
 @import "./blocks/cards-catalog.scss";
 @import "./blocks/card-catalog.scss";
 @import "./blocks/catalog-extra.scss";
 @import "./blocks/advantages-offer.scss";
 
-/* BLOCKS */ /* secondary */
+/* BLOCKS */
+/* secondary */
 @import "./blocks/address.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/logo-text.scss";
