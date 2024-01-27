@@ -5,11 +5,11 @@
 }
 
 .nav--nojs {
-  & .nav__toggle {
+  .nav__toggle {
     display: none;
   }
 
-  & .nav__wrapper {
+  .nav__wrapper {
     @media (max-width: $pre-tablet) {
       display: block;
       position: static;
@@ -19,7 +19,7 @@
     }
   }
 
-  & .nav__list {
+  .nav__list {
     @media (max-width: $pre-tablet) {
       width: 100%;
     }

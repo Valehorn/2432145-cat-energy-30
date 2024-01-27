@@ -16,7 +16,7 @@
 
 .header__wrapper--nojs {
   @media (max-width: $pre-tablet) {
-    & .header__nav-wrapper {
+    .header__nav-wrapper {
       max-width: 100%;
       min-width: 100%;
     }
