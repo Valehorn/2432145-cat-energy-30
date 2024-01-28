@@ -44,6 +44,7 @@
 
 .advantages__list {
   @include list-normalize;
+  counter-reset: advantagesList 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -62,6 +63,7 @@
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  counter-increment: advantagesList 1;
 
   &:last-child {
     margin: 0;
@@ -80,17 +82,13 @@
       margin-bottom: 0;
     }
   }
-}
-
-.advantages__item--leaf-image {
-  @include advantages-images (url("../../images/icons/stack.svg#leaf"), 25px, 28px);
 
   @media (min-width: $tablet-width) {
     &::before {
       position: absolute;
       top: -40px;
       right: 100px;
-      content: "1";
+      content: counter(advantagesList);
       z-index: -1;
       font-size: 280px;
       line-height: 1;
@@ -106,76 +104,20 @@
   }
 }
 
+.advantages__item--leaf-image {
+  @include advantages-images (url("../../images/icons/stack.svg#leaf"), 25px, 28px);
+}
+
 .advantages__item--boiling-water-image {
   @include advantages-images (url("../../images/icons/stack.svg#boiling-water"), 26px, 29px);
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      position: absolute;
-      top: -40px;
-      right: 79px;
-      content: "2";
-      z-index: -1;
-      font-size: 280px;
-      line-height: 1;
-      font-family: $secondary-font;
-      text-align: center;
-      color: $basic-grey;
-      order: 3;
-
-      @media (min-width: $desktop-width) {
-        right: 0;
-      }
-    }
-  }
 }
 
 .advantages__item--fork-and-knife-image {
   @include advantages-images (url("../../images/icons/stack.svg#fork-and-knife"), 25px, 30px);
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      position: absolute;
-      top: -40px;
-      right: 77px;
-      content: "3";
-      z-index: -1;
-      font-size: 280px;
-      line-height: 1;
-      font-family: $secondary-font;
-      text-align: center;
-      color: $basic-grey;
-      order: 3;
-
-      @media (min-width: $desktop-width) {
-        right: 0;
-      }
-    }
-  }
 }
 
 .advantages__item--clock-image {
   @include advantages-images (url("../../images/icons/stack.svg#clock"), 26px, 31px);
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      position: absolute;
-      top: -40px;
-      right: 75px;
-      content: "4";
-      z-index: -1;
-      font-size: 280px;
-      line-height: 1;
-      font-family: $secondary-font;
-      text-align: center;
-      color: $basic-grey;
-      order: 3;
-
-      @media (min-width: $desktop-width) {
-        right: -5px;
-      }
-    }
-  }
 }
 
 .advantages__item-description {
