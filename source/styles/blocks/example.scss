@@ -112,6 +112,14 @@
   }
 }
 
+.example__list-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .example__item {
   @include secondary-decoration-text (24px, 24px);
   display: flex;
