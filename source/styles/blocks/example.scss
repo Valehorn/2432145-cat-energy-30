@@ -100,7 +100,7 @@
   flex-wrap: wrap;
   gap: 31px;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     gap: 43px;
@@ -108,54 +108,45 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 59px;
-  }
-}
-
-.example__list-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid $special-grey;
-  border-radius: 2px;
-  min-width: 124px;
-  min-height: 56px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 162px;
-    min-height: 77px;
+    margin-bottom: 55px;
   }
 }
 
 .example__item {
   @include secondary-decoration-text (24px, 24px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
   text-align: center;
+  border: 1px solid $special-grey;
+  border-radius: 2px;
+  width: 124px;
+  min-height: 56px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    min-width: 162px;
+    min-height: 77px;
   }
 }
 
 .example__item-description {
-  position: absolute;
-  bottom: -17px;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
   margin: 0;
   background-color: $basic-grey-2;
-  box-shadow: 25px 0 0 0 $basic-grey-2, -25px 0 0 0 $basic-grey-2;
+  box-shadow: 16px 0 0 0 $basic-grey-2, -16px 0 0 0 $basic-grey-2;
+  margin-top: -6px;
 
   @media (min-width: $tablet-width) {
-    bottom: -6px;
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
-    box-shadow: 5px 0 0 0 #ffffff, -5px 0 0 0#ffffff;
+    box-shadow: 9px 0 0 0 #ffffff, -9px 0 0 0#ffffff;
+    margin-top: -10px;
 
     & br {
       display: none;
@@ -173,7 +164,6 @@
   justify-content: center;
   gap: 3px;
   margin-bottom: 20px;
-  margin-right: 9px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
