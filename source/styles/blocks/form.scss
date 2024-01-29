@@ -243,20 +243,37 @@
 
 .form__input-checkbox {
   position: absolute;
-  left: 0;
   top: 0;
-  display: block;
+  left: -3px;
+  appearance: none;
+  border: 1px solid $basic-grey;
   width: 30px;
   height: 30px;
-  border: 1px solid $basic-grey;
   background-color: transparent;
-  transform: translateY(7px);
   cursor: pointer;
 
+  &:checked::before {
+    position: absolute;
+    content: "";
+    top: 56%;
+    left: 49%;
+    width: 18px;
+    height: 14px;
+    background-image: url("../../images/icons/stack.svg#icon-checkmark");
+    background-repeat: no-repeat;
+    transform: translateY(-50%) translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      top: 48%;
+      width: 24px;
+      height: 19px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    top: 19%;
     width: 40px;
     height: 40px;
-    transform: translateY(12px);
   }
 }
 
@@ -306,46 +323,25 @@
   }
 }
 
-.form__input-mark[type="checkbox"]:checked ~ .form__input-checkbox {
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 18px;
-    height: 14px;
-    background-image: url("../../images/icons/stack.svg#icon-checkmark");
-    background-repeat: no-repeat;
-    transform: translateY(-50%) translateX(-50%);
-
-    @media (min-width: $tablet-width) {
-      width: 24px;
-      height: 19px;
-    }
-  }
-}
-
-.form__input-mark[type="checkbox"]:disabled ~ .form__input-checkbox {
+.form__input-checkbox:disabled {
   opacity: 0.3;
 }
 
-.form__input-mark[type="checkbox"]:disabled:checked ~ .form__input-checkbox {
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 18px;
-    height: 14px;
-    background-image: url("../../images/icons/stack.svg#icon-checkmark");
-    background-repeat: no-repeat;
-    transform: translateY(-50%) translateX(-50%);
-    opacity: 0.3;
+.form__input-checkbox:disabled::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../images/icons/stack.svg#icon-checkmark");
+  background-repeat: no-repeat;
+  transform: translateY(-50%) translateX(-50%);
+  opacity: 0.3;
 
-    @media (min-width: $tablet-width) {
-      width: 24px;
-      height: 19px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 19px;
   }
 }
 
