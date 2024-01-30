@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .nav {
   @media (max-width: $pre-tablet) {
     position: relative;

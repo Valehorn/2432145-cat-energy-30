@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .catalog-extra {
   @media (min-width: $desktop-width) {
     margin-right: auto;

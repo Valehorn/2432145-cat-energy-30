@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .advantages-offer {
   @media (min-width: $desktop-width) {
     align-self: flex-end;
