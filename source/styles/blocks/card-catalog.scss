@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 206px max-content min-content min-content min-content max-content;
+    grid-template-rows: 206px;
     background-image: linear-gradient(to bottom, transparent 0%, transparent 13%, $basic-grey 0%, $basic-grey 100%, transparent 0%);
     padding-right: 37px;
     padding-left: 37px;
@@ -107,6 +107,11 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
   }
 }
 
@@ -166,12 +171,11 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/4;
     min-width: 250px;
-    margin-top: 20px;
+    margin-top: auto;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 169px;
-    margin-top: 29px;
   }
 }
 
