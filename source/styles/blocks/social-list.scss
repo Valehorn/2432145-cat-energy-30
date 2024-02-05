@@ -9,11 +9,24 @@
 }
 
 .social-list__link {
+  --social-image: 0;
   display: flex;
   justify-content: center;
   width: 30px;
   height: 30px;
   color: #666666;
+
+  &::before {
+    position: absolute;
+    content: "";
+    mask-image: var(--social-image);
+    mask-repeat: no-repeat;
+    mask-size: 28px 22px;
+    background-color: #666666;
+    width: 28px;
+    height: 22px;
+    transition: background-color 0.3s ease;
+  }
 
   &:hover,
   &:focus-visible {
@@ -28,43 +41,13 @@
 }
 
 .social-list__link--vk {
-  &::before {
-    position: absolute;
-    content: "";
-    mask-image: url("../../images/icons/stack.svg#vk");
-    mask-repeat: no-repeat;
-    mask-size: 28px 22px;
-    background-color: #666666;
-    width: 28px;
-    height: 22px;
-    transition: background-color 0.3s ease;
-  }
+  --social-image: url("../../images/icons/stack.svg#vk");
 }
 
 .social-list__link--youtube {
-  &::before {
-    position: absolute;
-    content: "";
-    mask-image: url("../../images/icons/stack.svg#youtube");
-    mask-repeat: no-repeat;
-    mask-size: 28px 22px;
-    background-color: #666666;
-    width: 28px;
-    height: 22px;
-    transition: background-color 0.3s ease;
-  }
+  --social-image: url("../../images/icons/stack.svg#youtube");
 }
 
 .social-list__link--telegram {
-  &::before {
-    position: absolute;
-    content: "";
-    mask-image: url("../../images/icons/stack.svg#telegram");
-    mask-repeat: no-repeat;
-    mask-size: 28px 22px;
-    background-color: #666666;
-    width: 28px;
-    height: 22px;
-    transition: background-color 0.3s ease;
-  }
+  --social-image: url("../../images/icons/stack.svg#telegram");
 }
