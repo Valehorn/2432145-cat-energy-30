@@ -29,9 +29,7 @@ function openBurgerMenu() {
   document.addEventListener('keydown', onBurgerMenuEscKeydown);
 }
 
-navToggle.addEventListener('click', () => {
-  openBurgerMenu();
-});
+navToggle.addEventListener('click', openBurgerMenu);
 
 //Функция для удаления обработчика при закрытие окна.
 function closeBurgerMenu() {
