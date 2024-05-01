@@ -20,8 +20,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     display: flex;
     gap: 80px;
+    z-index: 1;
   }
 }
 
